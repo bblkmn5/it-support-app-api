@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  service: MyString
+  device: MyString
+  location: MyString
+  notes: MyString
+
+two:
+  service: MyString
+  device: MyString
+  location: MyString
+  notes: MyString
