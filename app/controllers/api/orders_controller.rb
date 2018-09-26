@@ -29,7 +29,7 @@ class Api::OrdersController < ApplicationController
 
   def destroy
     if @order.destroy
-      render status: 204 
+      render json: { message: "Successfully deleted order." }
     else
       render json: { message: "This order did not delete. Please try again." }
     end
