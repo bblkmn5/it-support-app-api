@@ -7,7 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Order.create!([
-  {service: "Training", device: "Macbook Air", location: "Onsite (office)", technician: "Peter", notes: "Purchased new laptops for finance department. Need training on migrating everything from Windows to PC. Varying levels of computer experience."}, 
+  {id: 1, service: "Training", device: "Macbook Air", location: "Onsite (office)", technician: "Peter", notes: "Purchased new laptops for finance department. Need training on migrating everything from Windows to PC. Varying levels of computer experience."}, 
   
-  {service: "Installation", device: "HP Laserjet Printer", location: "offsite (video conference call)", technician: "Bob", notes: "Installing correct drivers for printer. Is comfortable doing a screenshare for install.", }
+  {id: 2, service: "Installation", device: "HP Laserjet Printer", location: "offsite (video conference call)", technician: "Bob", notes: "Installing correct drivers for printer. Is comfortable doing a screenshare for install.", }
+])
+
+Technician.create!([
+  {id: 1, name: "Peter", maxOrders: 3, notes: "Prefers Apple products and working on-site."},
+
+  {id: 2, name: "Bob", maxOrders: 4, notes: "Prefers working off-site and with smartphones."}
 ])
