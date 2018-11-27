@@ -17,6 +17,6 @@ class Api::TechniciansController < ApplicationController
     end
   
     def technician_params
-      params.require(:technician).permit(:name, :maxOrders, :notes)
+      params.require(:technician).permit(:name, :maxOrders, :expertise, :notes)
     end
   end

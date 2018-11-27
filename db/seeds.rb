@@ -7,13 +7,23 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Order.create!([
-  {id: 1, service: "Training", device: "Macbook Air", location: "Onsite (office)", technician: "Peter", notes: "Purchased new laptops for finance department. Need training on migrating everything from Windows to PC. Varying levels of computer experience."}, 
+  {id: 1, service: "Training", device: "Macbook Air", deviceType: "Laptop", location: "Onsite (office)", technician: "Peter", notes: "Purchased new laptops for finance department. Need training on migrating everything from Windows to PC. Varying levels of computer experience."}, 
   
-  {id: 2, service: "Installation", device: "HP Laserjet Printer", location: "offsite (video conference call)", technician: "Bob", notes: "Installing correct drivers for printer. Is comfortable doing a screenshare for install.", }
+  {id: 2, service: "Installation", device: "HP Laserjet P1250", deviceType: "Printer", location: "offsite (video conference)", technician: "Bob", notes: "Installing correct drivers for printer. Is comfortable doing a screenshare for install.", }
 ])
 
 Technician.create!([
-  {id: 1, name: "Peter", maxOrders: 3, notes: "Prefers Apple products and working on-site."},
+  {id: 1, name: "Peter", maxOrders: 3, expertise: "Apple Products", notes: "Prefers working on-site."},
 
-  {id: 2, name: "Bob", maxOrders: 4, notes: "Prefers working off-site and with smartphones."}
+  {id: 2, name: "Bob", maxOrders: 4, expertise: "Microsoft Products", notes: "Prefers working off-site."},
+
+  {id: 3, name: "Michelle", maxOrders: 4, expertise: "Sound System", notes: "Set up and troubleshooting, needs at least 24 hour notice before appointment."},
+
+  {id: 4, name: "Frank", maxOrders: 3, expertise: "Printers", notes: "Prefers off-site troubleshooting"},
+  
+  {id: 5, name: "Louise", maxOrders: 5, expertise: "Internet Routers", notes: "Prefers on-site for troubleshooting and installations"},
+  
+  {id: 6, name: "Tina", maxOrders: 6, expertise: "Televisions", notes: "Prefers on-site, no TV is too big of a challenge!"},
+  
+  {id: 7, name: "Jack", maxOrders: 5, expertise: "None", notes: "New hire, Jack of all Trades"}
 ])
