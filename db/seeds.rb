@@ -15,7 +15,7 @@ Order.create!([
 Technician.create!([
   {id: 1, name: "Peter", maxOrders: 3, expertise: "Mobile Phones", notes: "Prefers working on-site."},
 
-  {id: 2, name: "Bob", maxOrders: 4, expertise: "Laptop/Desktops", notes: "Prefers working off-site."},
+  {id: 2, name: "Bob", maxOrders: 4, expertise: "Laptop/Desktops/Tablets", notes: "Prefers working off-site."},
 
   {id: 3, name: "Michelle", maxOrders: 4, expertise: "Sound Systems", notes: "Set up and troubleshooting, needs at least 24 hour notice before appointment."},
 
@@ -23,7 +23,7 @@ Technician.create!([
   
   {id: 5, name: "Louise", maxOrders: 5, expertise: "Internet Routers", notes: "Prefers on-site for troubleshooting and installations"},
   
-  {id: 6, name: "Tina", maxOrders: 6, expertise: "Televisions", notes: "Prefers on-site, no TV is too big of a challenge!"},
+  {id: 6, name: "Tina", maxOrders: 6, expertise: "Televisions", notes: "Prefers on-site"},
   
   {id: 7, name: "Jack", maxOrders: 5, expertise: "None", notes: "New hire, Jack of all Trades"}
 ])
