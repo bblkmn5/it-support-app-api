@@ -42,6 +42,6 @@ class Api::OrdersController < ApplicationController
   end
 
   def order_params
-    params.require(:order).permit(:device, :deviceType, :service, :location, :technician, :notes)
+    params.require(:order).permit(:device, :deviceType, :service, :location, :technician, :likeCount, :notes)
   end
 end
