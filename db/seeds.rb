@@ -5,11 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Order.destroy_all
+Technician.destroy_all
 
 Order.create!([
-  {id: 1, service: "Training", device: "Macbook Air", deviceType: "Laptop", location: "Onsite (office)", technician: "Peter", notes: "Purchased new laptops for finance department. Need training on migrating everything from Windows to PC. Varying levels of computer experience."}, 
+  {id: 1, service: "Training", device: "Macbook Air", deviceType: "Laptop", location: "Onsite (office)", technician: "Peter", notes: "Purchased new laptops for finance department. Need training on migrating everything from Windows to PC. Varying levels of computer experience.", likeCount: 0}, 
   
-  {id: 2, service: "Installation", device: "HP Laserjet P1250", deviceType: "Printer", location: "Offsite (video conference)", technician: "Bob", notes: "Installing correct drivers for printer. Is comfortable doing a screenshare for install.", }
+  {id: 2, service: "Installation", device: "HP Laserjet P1250", deviceType: "Printer", location: "Offsite (video conference)", technician: "Bob", notes: "Installing correct drivers for printer. Is comfortable doing a screenshare for install.", likeCount: 1 }
 ])
 
 Technician.create!([
